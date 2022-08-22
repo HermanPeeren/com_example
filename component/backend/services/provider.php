@@ -10,10 +10,10 @@ defined('_JEXEC') || die;
 
 use Acme\Example\Administrator\Extension\ExampleComponent;
 use Acme\Example\Administrator\Provider\Foobar as FoobarProvider;
+use Acme\Example\Administrator\Provider\MVCFactory;
 use Joomla\CMS\Dispatcher\ComponentDispatcherFactoryInterface;
 use Joomla\CMS\Extension\ComponentInterface;
 use Joomla\CMS\Extension\Service\Provider\ComponentDispatcherFactory;
-use Joomla\CMS\Extension\Service\Provider\MVCFactory;
 use Joomla\CMS\MVC\Factory\MVCFactoryInterface;
 use Joomla\DI\Container;
 use Joomla\DI\ServiceProviderInterface;

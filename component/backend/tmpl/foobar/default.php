@@ -14,3 +14,7 @@ defined('_JEXEC') || die;
 <h3>
 	<?= Text::_('COM_EXAMPLE_FOOBAR_HEAD') ?>
 </h3>
+
+<pre>
+<?= $this->foobarStuff ?>
+</pre>
