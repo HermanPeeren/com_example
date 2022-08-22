@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<project name="Example" description="Example Component" default="git" >
+	<import file="${phing.dir}/../../buildfiles/phing/common.xml" />
+
+	<!--
+	====================================================================================================
+	File sets
+	====================================================================================================
+	-->
+	<fileset dir="${dirs.component}" id="component" expandsymboliclinks="true">
+		<include name="backend/**" />
+<!--		<include name="frontend/**" />-->
+		<include name="language/**" />
+<!--		<include name="media/**" />-->
+
+		<exclude name="backend/example.xml" />
+
+		<include name="LICENSE.txt" />
+		<include name="*.xml" />
+	</fileset>
+
+	<fileset dir="${dirs.release}" id="package">
+		<include name="com_*.zip" />
+		<include name="file_fef*.zip" />
+		<include name="file_*.zip" />
+		<include name="mod_*.zip" />
+		<include name="plg_*.zip" />
+		<include name="lib_*.zip" />
+		<include name="pkg_*.xml" />
+		<include name="*.txt" />
+		<include name="script.contactus.php" />
+	</fileset>
+
+
+	<!--
+	====================================================================================================
+	Tasks - General
+	====================================================================================================
+	-->
+
+	<target name="all" description="Makes everything"
+			depends="git">
+	</target>
+
+	<target name="documentation" description="Documentation (does not exist)">
+		<echo>No documentation exists for this package</echo>
+	</target>
+</project>

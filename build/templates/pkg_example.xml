@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension version="4.0" type="package" method="upgrade">
+    <name>pkg_example</name>
+    <author>Nicholas K. Dionysopoulos</author>
+    <creationDate>##DATE##</creationDate>
+    <packagename>example</packagename>
+    <version>##VERSION##</version>
+    <url>https://www.akeeba.com</url>
+    <packager>Akeeba Ltd</packager>
+    <packagerurl>https://www.akeeba.com</packagerurl>
+    <copyright>Copyright (c)2022 Akeeba Ltd / Nicholas K. Dionysopoulos</copyright>
+    <license>GNU GPL v2 or later</license>
+    <description>pkg_example_xml_desc</description>
+
+    <files>
+        <file type="component" id="com_example">com_example.zip</file>
+    </files>
+</extension>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>com_example</name>
+	<creationDate>2022-08-22</creationDate>
+	<author>Nicholas K. Dionysopoulos</author>
+	<authorEmail>nicholas@akeeba.com</authorEmail>
+	<authorUrl>https://www.akeeba.com</authorUrl>
+	<copyright>Copyright (c)2022 Nicholas K. Dionysopoulos / Akeeba Ltd</copyright>
+	<license>GNU GPL v2 or later</license>
+	<version>1.0.0</version>
+	<description>COM_EXAMPLE_XML_DESCRIPTION</description>
+	<namespace path="src">Acme\Example</namespace>
+
+	<!--
+	<files folder="frontend">
+	</files>
+	-->
+
+	<!-- Administrator back-end section -->
+	<administration>
+		<!-- Administration menu -->
+		<menu view="foobar">COM_EXAMPLE</menu>
+
+		<!-- Back-end files -->
+		<files folder="backend">
+			<folder>language</folder>
+			<folder>services</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+		</files>
+
+		<!-- Back-end translation files -->
+		<languages folder="backend/language">
+			<language tag="en-GB">en-GB/com_example.ini</language>
+			<language tag="en-GB">en-GB/com_example.sys.ini</language>
+		</languages>
+
+	</administration>
+
+	<!-- Media files -->
+	<media destination="com_example" folder="media">
+		<!--
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+
+		<filename>joomla.asset.json</filename>
+		-->
+	</media>
+</extension>
