@@ -9,6 +9,7 @@
 defined('_JEXEC') || die;
 
 use Acme\Example\Administrator\Extension\ExampleComponent;
+use Acme\Example\Administrator\Provider\Foobar as FoobarProvider;
 use Joomla\CMS\Dispatcher\ComponentDispatcherFactoryInterface;
 use Joomla\CMS\Extension\ComponentInterface;
 use Joomla\CMS\Extension\Service\Provider\ComponentDispatcherFactory;
@@ -22,6 +23,7 @@ return new class implements ServiceProviderInterface {
 	{
 		$container->registerServiceProvider(new MVCFactory('Acme\\Example'));
 		$container->registerServiceProvider(new ComponentDispatcherFactory('Acme\\Example'));
+		$container->registerServiceProvider(new FoobarProvider());
 
 		$container->set(
 			ComponentInterface::class,
